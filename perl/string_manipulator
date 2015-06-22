@@ -1,0 +1,17 @@
+#!/usr/bin/perl
+#open FILE, "<",  "results/M88-FLEX-TRUE_TORNADO_load_0.95.txt" or die $!;
+open FILE, "<",  $ARGV[0] or die $!;
+open TH, "+>>", $ARGV[1] or die $!;
+while(<FILE>) {
+	chomp;
+	if ($_ =~/Throu/) {
+		my(@fields) = split /[=,f]/;
+		print TH $fields[1]."\,";
+	}
+	if($_=~/Total message latency/){
+		my(@fields)=split /=/;
+		print TH $fields[1]."\n";
+	}
+}
+close FILE or die $!;
+close TH or die $!;

@@ -1,0 +1,39 @@
+WARNING!: Packets are not discarded at injection queues
+          expect large memory footprint if simulation is
+          long and network is saturated 
+          (use -D option to avoid this)
+ 
+Simulating..
+
+******************* NET CONFIGURATION *********************
+ Network        : Mesh(4,4,1)
+ Buffer control : WH
+ Routing control: DOR
+ Started at     : Sat Oct 12 22:24:30 2013
+ Ended at       : Sat Oct 12 22:24:30 2013
+***********************************************************
+ Simulation time         = 00:00:12 (12 secs)
+ Memory Footprint        = 10.6875 MBytes)
+ Traffic Pattern         =  Bit reversal
+ Seed                    = 113
+ Cycles simulated        = 93001
+ Cycles deprecated       = 0
+ Buffers size            = 8
+ Messages length         = 1 packet(s)
+ Packets length          = 8 flits
+************************ PERFORMANCE ***********************
+ Supply Thr. Norm        = 0.200713 flits/cycle/router 
+ Accept Thr. Norm        = 0.200713 f/c/r (m: 0, M:0.279137)
+ Supply Thr.             = 3.21141 f/c
+ Throughput              = 3.21141 f/c (m: 0, M:4.46619)
+ Average Distance        = 3.32628
+ Messages generated      = 37333
+ Messages received       = 37333
+ Messages to inject      = 0
+ Messages on Escape      = 0
+ Total message latency   = 29632.4
+ Network message latency = 54.406
+ Buffer message latency  = 29578
+ Maximum message latency = 72130
+ Last Message cycle      = 93000
+***********************************************************
